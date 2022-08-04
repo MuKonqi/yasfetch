@@ -28,8 +28,6 @@ v_hostname=socket.gethostname()
 v_platform=platform.platform()
 v_username=getpass.getuser()
 v_system=platform.system()
-v_cpu=str(psutil.cpu_percent(4))
-v_ram=str(psutil.virtual_memory()[2])
 v_dir="/home/"+v_username+"/.config/yasfetch"
 v_pkg_manager=""
 color=""
@@ -38,6 +36,8 @@ args=sys.argv[1:]
 
 def main():
     v_uptime=os.popen('uptime -p').read()[:-1]
+    v_cpu=str(psutil.cpu_percent(4))
+    v_ram=str(psutil.virtual_memory()[2])
 
     sifir = "\033[0m"
     siyah = "\033[;30m"
@@ -190,13 +190,13 @@ if v_system == "Linux":
     elif "settings" in args or "ayarlar" in args:
         if os.path.isfile(v_dir+"/lang/en.txt"):
             input11=input("Please select an option. Options:\n1 -> Change Language to Turkish (Türkçe)\n2 -> Change Color Preference\nAnswer: ")
-            if input11 == 1:
+            if input11 == "1":
                 os.system("cd "+v_dir+"/lang/ ; rm * ; touch tr.txt")
-                print("Türkçe dili uygulandı.")
+                print("Türkçe dili uygulandı.\n\n\n")
                 main()
-            if input11 == 2:
+            if input11 == "2":
                 input12=input("\n\nPlease choose a color. This color will be used in the actual output of yasfetch.\nOptions: black / red / green / yellow / blue / pink / turquoise / white\nAnswer: ")
-                if input2 == "black":
+                if input12 == "black":
                     os.system("cd "+v_dir+"/color/ ; touch 1.txt")
                     print("Succesful!\n\n\n")
                     main()
@@ -230,13 +230,13 @@ if v_system == "Linux":
                     main()
         elif os.path.isfile(v_dir+"/lang/tr.txt"):
             input11=input("Lütfen bir seçenek seçin. Seçenekler:\n1 -> Dili İngilizce (English) Yap\n2 -> Renk Tercihini Değiştir\nCevap: ")
-            if input11 == 1:
+            if input11 == "1":
                 os.system("cd "+v_dir+"/lang/ ; rm * ; touch en.txt")
-                print("English language is applied.")
+                print("English language is applied.\n\n\n")
                 main()
-            if input11 == 2:
+            if input11 == "2":
                 input12=input("\n\nLütfen bir renk seçin. Bu renk, yasfetch'in asıl çıktısında kullanılacaktır.\nSeçenekler: siyah / kırmızı / yeşil / sarı / mavi / pembe / turkuaz / beyaz\nCevap: ")
-                if input2 == "siyah":
+                if input12 == "siyah":
                     os.system("cd "+v_dir+"/color/ ; touch 1.txt")
                     print("Başarılı!\n\n\n")
                     main()
@@ -271,8 +271,10 @@ if v_system == "Linux":
     else:
         main()
 elif v_system != "Linux":
+    v_cpu=str(psutil.cpu_percent(4))
+    v_ram=str(psutil.virtual_memory()[2])
     print("     Welcome to yasfetch "+v_username+"!")
     print("Hostname:  "+v_hostname)
     print("OS:        "+v_platform)
     print("CPU usage: "+v_cpu)
-    print("RAM Usage: "+v_ram) 
+    print("RAM Usage: "+v_ram)
