@@ -103,6 +103,7 @@ def main():
         print(f"{color}CPU kullanımı:      {sifir}%"+v_cpu)
         print(f"{color}RAM kullanımı:      {sifir}%"+v_ram)
         print(f"{color}Çalışma süresi:     {sifir}"+v_uptime)
+    exit()
 if v_system == "Linux":
     if not os.path.isdir(v_dir) or not os.path.isdir(v_dir+"/color") or not os.path.isdir(v_dir+"/lang"):
         os.system("cd /home/"+v_username+"/.config/ ; mkdir yasfetch ; cd yasfetch ; mkdir color ; mkdir lang")
@@ -184,9 +185,11 @@ if v_system == "Linux":
         if os.path.isfile(v_dir+"/lang/en.txt"):
             print("help or -h     Show help (this) screen")
             print("settings       Show settings screen")
+            exit()
         elif os.path.isfile(v_dir+"/lang/tr.txt"):
             print("yardım veya y      Yardım (bu) ekranını göster")
             print("ayarlar            Ayarlar ekranını göster")
+            exit()
 
 
     elif "settings" in args or "ayarlar" in args:
