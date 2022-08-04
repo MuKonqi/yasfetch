@@ -7,8 +7,11 @@ All GNU/Linux distros. / Tüm GNU/Linux dağıtımları.
 First, install Git. Git is available in the repository of most distributions under the name: git
 
 Then, type in terminal: ```git clone https://github.com/MuKonqi/yasfetch```
+
 Now if you are using sudo ```cd yasfetch ; sudo python3 apiutaller.py```;
+
 if you are using doas ```cd yasfetch ; doas python3 apiutaller.py```;
+
 If you are using su type ```cd yasfetch ; su python3 apiutaller.py```.
 
 That's all!
@@ -16,8 +19,11 @@ That's all!
 First, install Git. Git is available in the repository of most distributions under the name: git
 
 Then, type in terminal: ```git clone https://github.com/MuKonqi/yasfetch```
+
 Now if you are using sudo ```cd yasfetch ; sudo python3 apiutaller.py```;
+
 if you are using doas ```cd yasfetch ; doas python3 apiutaller.py```;
+
 If you are using su type ```cd yasfetch ; su python3 apiutaller.py```.
 
 That's all!
