@@ -8,7 +8,7 @@ First, install Git. Git is available in the repository of most distributions und
 
 Then, type in terminal: ```git clone https://github.com/MuKonqi/yasfetch```
 
-Now if you are using sudo ```cd yasfetch ; sudo python3 apiutaller.py```;
+Now if you are using sudo: ```cd yasfetch ; sudo python3 apiutaller.py```;
 
 if you are using doas ```cd yasfetch ; doas python3 apiutaller.py```;
 
@@ -16,15 +16,15 @@ If you are using su type ```cd yasfetch ; su python3 apiutaller.py```.
 
 That's all!
 #### Türkçe
-First, install Git. Git is available in the repository of most distributions under the name: git
+Öncelikle, Git'i yükleyin. Git çoğu dağıtımın deposunda şu adla yer alır: git
 
-Then, type in terminal: ```git clone https://github.com/MuKonqi/yasfetch```
+Sonra, terminalde yazın: ```git clone https://github.com/MuKonqi/yasfetch```
 
-Now if you are using sudo ```cd yasfetch ; sudo python3 apiutaller.py```;
+Şimdi sudo kullanıyorsanız ```cd yasfetch ; sudo python3 apiutaller.py```;
 
-if you are using doas ```cd yasfetch ; doas python3 apiutaller.py```;
+Eğer doas kullanıyorsunuz ```cd yasfetch ; doas python3 apiutaller.py```;
 
-If you are using su type ```cd yasfetch ; su python3 apiutaller.py```.
+Eğer su kullanıyorsanız ```cd yasfetch ; su python3 apiutaller.py``` yazınız.
 
 That's all!
 ### License / Lisans
