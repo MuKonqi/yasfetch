@@ -101,7 +101,7 @@ def main():
         if v_pkg_manager != "":
             print(f"{color}Paket yönetcisi:    {sifir}"+v_pkg_manager)
         print(f"{color}CPU kullanımı:      {sifir}%"+v_cpu)
-        print(f"{color}RAM uullanımı:      {sifir}%"+v_ram)
+        print(f"{color}RAM kullanımı:      {sifir}%"+v_ram)
         print(f"{color}Çalışma süresi:     {sifir}"+v_uptime)
 if v_system == "Linux":
     if not os.path.isdir(v_dir) or not os.path.isdir(v_dir+"/color") or not os.path.isdir(v_dir+"/lang"):
