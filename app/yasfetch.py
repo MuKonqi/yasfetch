@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-#-*-coding:utf-8-*-
 
 
 # LICENSE !!!!!
@@ -15,9 +14,13 @@
 ## You should have received a copy of the GNU General Public License
 ## along with yasfetch.  If not, see <https://www.gnu.org/licenses/>.
 
+import platform
+v_system=platform.system()
+if v_system != "Linux":
+    exit("Your operating system is not supported.")
+
 import distro
 import socket
-import platform
 import getpass
 import psutil
 import sys
@@ -27,7 +30,6 @@ v_distro=distro.name(pretty=True)
 v_hostname=socket.gethostname()
 v_platform=platform.platform()
 v_username=getpass.getuser()
-v_system=platform.system()
 v_dir="/home/"+v_username+"/.config/yasfetch"
 v_pkg_manager=""
 color=""
@@ -270,11 +272,3 @@ if v_system == "Linux":
                     main()
     else:
         main()
-elif v_system != "Linux":
-    v_cpu=str(psutil.cpu_percent(4))
-    v_ram=str(psutil.virtual_memory()[2])
-    print("     Welcome to yasfetch "+v_username+"!")
-    print("Hostname:  "+v_hostname)
-    print("OS:        "+v_platform)
-    print("CPU usage: "+v_cpu)
-    print("RAM Usage: "+v_ram)
