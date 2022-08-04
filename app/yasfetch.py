@@ -90,8 +90,8 @@ def main():
         print(f"{color}Kernel:             {sifir}"+v_platform)
         if v_pkg_manager != "":
             print(f"{color}Package manager:    {sifir}"+v_pkg_manager)
-        print(f"{color}CPU usage:          {sifir}"+v_cpu)
-        print(f"{color}RAM Usage:          {sifir}"+v_ram)
+        print(f"{color}CPU usage:          {sifir}%"+v_cpu)
+        print(f"{color}RAM usage:          {sifir}%"+v_ram)
         print(f"{color}Uptime:             {sifir}"+v_uptime)
     elif os.path.isfile(v_dir+"/lang/tr.txt"):
         print(f"     yasfetch'e hoşgeldiniz {color}"+v_username+f"{sifir}!")
@@ -100,8 +100,8 @@ def main():
         print(f"{color}Çekirdek:           {sifir}"+v_platform)
         if v_pkg_manager != "":
             print(f"{color}Paket yönetcisi:    {sifir}"+v_pkg_manager)
-        print(f"{color}CPU kullanımı:      {sifir}"+v_cpu)
-        print(f"{color}RAM Kullanımı:      {sifir}"+v_ram)
+        print(f"{color}CPU kullanımı:      {sifir}%"+v_cpu)
+        print(f"{color}RAM uullanımı:      {sifir}%"+v_ram)
         print(f"{color}Çalışma süresi:     {sifir}"+v_uptime)
 if v_system == "Linux":
     if not os.path.isdir(v_dir) or not os.path.isdir(v_dir+"/color") or not os.path.isdir(v_dir+"/lang"):
