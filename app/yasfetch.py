@@ -110,74 +110,74 @@ if v_system == "Linux":
         input1=input("Can't found language and color setting. First, select a language.\nDil ve renk ayarı bulunamadı. İlk önce bir dil seçin.\n\nOptions / Seçenekler: en / tr\nAnswer / Cevap: ")
         
         if input1 == "en":
-            os.system("cd "+v_dir+"/lang/ ; touch en.txt")
+            os.system("cd "+v_dir+"/lang/ ; rm * ; touch en.txt")
             input2=input("English selected.\n\nPlease select a color. This color will be used in the actual output of yasfetch.\nOptions: black / red / green / yellow / blue / pink / turquoise / white\nAnswer: ")
             if input2 == "black":
-                os.system("cd "+v_dir+"/color/ ; touch 1.txt")
+                os.system("cd "+v_dir+"/color/ ; rm * ; touch 1.txt")
                 print("Successful!\n\n\n")
                 main()
             elif input2 == "red":
-                os.system("cd "+v_dir+"/color/ ; touch 2.txt")
+                os.system("cd "+v_dir+"/color/ ; rm * ; touch 2.txt")
                 print("Successful!\n\n\n")
                 main()
             elif input2 == "green":
-                os.system("cd "+v_dir+"/color/ ; touch 3.txt")
+                os.system("cd "+v_dir+"/color/ ; rm * ; touch 3.txt")
                 print("Successful!\n\n\n")
                 main()
             elif input2 == "yellow":
-                os.system("cd "+v_dir+"/color/ ; touch 4.txt")
+                os.system("cd "+v_dir+"/color/ ; rm * ; touch 4.txt")
                 print("Successful!\n\n\n")
                 main()
             elif input2 == "blue":
-                os.system("cd "+v_dir+"/color/ ; touch 5.txt")
+                os.system("cd "+v_dir+"/color/ ; rm * ; touch 5.txt")
                 print("Successful!\n\n\n")
                 main()
             elif input2 == "pink":
-                os.system("cd "+v_dir+"/color/ ; touch 6.txt")
+                os.system("cd "+v_dir+"/color/ ; rm * ; touch 6.txt")
                 print("Successful!\n\n\n")
                 main()
             elif input2 == "turquoise":
-                os.system("cd "+v_dir+"/color/ ; touch 7.txt")
+                os.system("cd "+v_dir+"/color/ ; rm * ; touch 7.txt")
                 print("Successful!\n\n\n")
                 main()
             elif input2 == "white":
-                os.system("cd "+v_dir+"/color/ ; touch 8.txt")
+                os.system("cd "+v_dir+"/color/ ; rm * ; touch 8.txt")
                 print("Successful!\n\n\n")
                 main()
 
         elif input1 == "tr":
-            os.system("cd "+v_dir+"/lang/ ; touch tr.txt")
+            os.system("cd "+v_dir+"/lang/ ; rm * ; touch tr.txt")
             input2=input("Türkçe seçildi.\n\nLütfen bir renk seçin. Bu renk, yasfetch'in asıl çıktısında kullanılacaktır.\nSeçenekler: siyah / kırmızı / yeşil / sarı / mavi / pembe / turkuaz / beyaz\nCevap: ")
             if input2 == "siyah":
-                os.system("cd "+v_dir+"/color/ ; touch 1.txt")
+                os.system("cd "+v_dir+"/color/ ; rm * ; touch 1.txt")
                 print("Başarılı!\n\n\n")
                 main()
             elif input2 == "kırmızı":
-                os.system("cd "+v_dir+"/color/ ; touch 2.txt")
+                os.system("cd "+v_dir+"/color/ ; rm * ; touch 2.txt")
                 print("Başarılı!\n\n\n")
                 main()
             elif input2 == "yeşil":
-                os.system("cd "+v_dir+"/color/ ; touch 3.txt")
+                os.system("cd "+v_dir+"/color/ ; rm * ; touch 3.txt")
                 print("Başarılı!\n\n\n")
                 main()
             elif input2 == "sarı":
-                os.system("cd "+v_dir+"/color/ ; touch 4.txt")
+                os.system("cd "+v_dir+"/color/ ; rm * ; touch 4.txt")
                 print("Başarılı!\n\n\n")
                 main()
             elif input2 == "mavi":
-                os.system("cd "+v_dir+"/color/ ; touch 5.txt")
+                os.system("cd "+v_dir+"/color/ ; rm * ; touch 5.txt")
                 print("Başarılı!\n\n\n")
                 main()
             elif input2 == "pembe":
-                os.system("cd "+v_dir+"/color/ ; touch 6.txt")
+                os.system("cd "+v_dir+"/color/ ; rm * ; touch 6.txt")
                 print("Başarılı!\n\n\n")
                 main()
             elif input2 == "turkuaz":
-                os.system("cd "+v_dir+"/color/ ; touch 7.txt")
+                os.system("cd "+v_dir+"/color/ ; rm * ; touch 7.txt")
                 print("Başarılı!\n\n\n")
                 main()
             elif input2 == "beyaz":
-                os.system("cd "+v_dir+"/color/ ; touch 8.txt")
+                os.system("cd "+v_dir+"/color/ ; rm * ; touch 8.txt")
                 print("Başarılı!\n\n\n")
                 main()
 
@@ -196,81 +196,81 @@ if v_system == "Linux":
         if os.path.isfile(v_dir+"/lang/en.txt"):
             input11=input("Please select an option. Options:\n1 -> Change Language to Turkish (Türkçe)\n2 -> Change Color Preference\nAnswer: ")
             if input11 == "1":
-                os.system("cd "+v_dir+"/lang/ ; rm * ; touch tr.txt")
+                os.system("cd "+v_dir+"/lang/ ; rm * ; rm * ; touch tr.txt")
                 print("Türkçe dili uygulandı.\n\n\n")
                 main()
             if input11 == "2":
                 input12=input("\n\nPlease choose a color. This color will be used in the actual output of yasfetch.\nOptions: black / red / green / yellow / blue / pink / turquoise / white\nAnswer: ")
                 if input12 == "black":
-                    os.system("cd "+v_dir+"/color/ ; touch 1.txt")
+                    os.system("cd "+v_dir+"/color/ ; rm * ; touch 1.txt")
                     print("Succesful!\n\n\n")
                     main()
                 elif input12 == "red":
-                    os.system("cd "+v_dir+"/color/ ; touch 2.txt")
+                    os.system("cd "+v_dir+"/color/ ; rm * ; touch 2.txt")
                     print("Succesful!\n\n\n")
                     main()
                 elif input12 == "green":
-                    os.system("cd "+v_dir+"/color/ ; touch 3.txt")
+                    os.system("cd "+v_dir+"/color/ ; rm * ; touch 3.txt")
                     print("Succesful!\n\n\n")
                     main()
                 elif input12 == "yellow":
-                    os.system("cd "+v_dir+"/color/ ; touch 4.txt")
+                    os.system("cd "+v_dir+"/color/ ; rm * ; touch 4.txt")
                     print("Succesful!\n\n\n")
                     main()
                 elif input12 == "blue":
-                    os.system("cd "+v_dir+"/color/ ; touch 5.txt")
+                    os.system("cd "+v_dir+"/color/ ; rm * ; touch 5.txt")
                     print("Succesful!\n\n\n")
                     main()
                 elif input12 == "pink":
-                    os.system("cd "+v_dir+"/color/ ; touch 6.txt")
+                    os.system("cd "+v_dir+"/color/ ; rm * ; touch 6.txt")
                     print("Succesful!\n\n\n")
                     main()
                 elif input12 == "turquoise":
-                    os.system("cd "+v_dir+"/color/ ; touch 7.txt")
+                    os.system("cd "+v_dir+"/color/ ; rm * ; touch 7.txt")
                     print("Succesful!\n\n\n")
                     main()
                 elif input12 == "white":
-                    os.system("cd "+v_dir+"/color/ ; touch 8.txt")
+                    os.system("cd "+v_dir+"/color/ ; rm * ; touch 8.txt")
                     print("Succesful!\n\n\n")
                     main()
         elif os.path.isfile(v_dir+"/lang/tr.txt"):
             input11=input("Lütfen bir seçenek seçin. Seçenekler:\n1 -> Dili İngilizce (English) Yap\n2 -> Renk Tercihini Değiştir\nCevap: ")
             if input11 == "1":
-                os.system("cd "+v_dir+"/lang/ ; rm * ; touch en.txt")
+                os.system("cd "+v_dir+"/lang/ ; rm * ; rm * ; touch en.txt")
                 print("English language is applied.\n\n\n")
                 main()
             if input11 == "2":
                 input12=input("\n\nLütfen bir renk seçin. Bu renk, yasfetch'in asıl çıktısında kullanılacaktır.\nSeçenekler: siyah / kırmızı / yeşil / sarı / mavi / pembe / turkuaz / beyaz\nCevap: ")
                 if input12 == "siyah":
-                    os.system("cd "+v_dir+"/color/ ; touch 1.txt")
+                    os.system("cd "+v_dir+"/color/ ; rm * ; touch 1.txt")
                     print("Başarılı!\n\n\n")
                     main()
                 elif input12 == "kırmızı":
-                    os.system("cd "+v_dir+"/color/ ; touch 2.txt")
+                    os.system("cd "+v_dir+"/color/ ; rm * ; touch 2.txt")
                     print("Başarılı!\n\n\n")
                     main()
                 elif input12 == "yeşil":
-                    os.system("cd "+v_dir+"/color/ ; touch 3.txt")
+                    os.system("cd "+v_dir+"/color/ ; rm * ; touch 3.txt")
                     print("Başarılı!\n\n\n")
                     main()
                 elif input12 == "sarı":
-                    os.system("cd "+v_dir+"/color/ ; touch 4.txt")
+                    os.system("cd "+v_dir+"/color/ ; rm * ; touch 4.txt")
                     print("Başarılı!\n\n\n")
                     main()
                 elif input12 == "mavi":
-                    os.system("cd "+v_dir+"/color/ ; touch 5.txt")
+                    os.system("cd "+v_dir+"/color/ ; rm * ; touch 5.txt")
                     print("Başarılı!\n\n\n")
                     main()
                 elif input12 == "pembe":
-                    os.system("cd "+v_dir+"/color/ ; touch 6.txt")
+                    os.system("cd "+v_dir+"/color/ ; rm * ; touch 6.txt")
                     print("Başarılı!\n\n\n")
                     main()
                 elif input12 == "turkuaz":
-                    os.system("cd "+v_dir+"/color/ ; touch 7.txt")
+                    os.system("cd "+v_dir+"/color/ ; rm * ; touch 7.txt")
                     print("Başarılı!\n\n\n")
                     main()
                 elif input12 == "beyaz":
-                    os.system("cd "+v_dir+"/color/ ; touch 8.txt")
+                    os.system("cd "+v_dir+"/color/ ; rm * ; touch 8.txt")
                     print("Başarılı!\n\n\n")
                     main()
     else:
