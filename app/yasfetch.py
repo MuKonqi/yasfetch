@@ -203,35 +203,35 @@ if v_system == "Linux":
                 input12=input("\n\nPlease choose a color. This color will be used in the actual output of yasfetch.\nOptions: black / red / green / yellow / blue / pink / turquoise / white\nAnswer: ")
                 if input12 == "black":
                     os.system("cd "+v_dir+"/color/ ; rm * ; touch 1.txt")
-                    print("Succesful!\n\n\n")
+                    print("Successful!\n\n\n")
                     main()
                 elif input12 == "red":
                     os.system("cd "+v_dir+"/color/ ; rm * ; touch 2.txt")
-                    print("Succesful!\n\n\n")
+                    print("Successful!\n\n\n")
                     main()
                 elif input12 == "green":
                     os.system("cd "+v_dir+"/color/ ; rm * ; touch 3.txt")
-                    print("Succesful!\n\n\n")
+                    print("Successful!\n\n\n")
                     main()
                 elif input12 == "yellow":
                     os.system("cd "+v_dir+"/color/ ; rm * ; touch 4.txt")
-                    print("Succesful!\n\n\n")
+                    print("Successful!\n\n\n")
                     main()
                 elif input12 == "blue":
                     os.system("cd "+v_dir+"/color/ ; rm * ; touch 5.txt")
-                    print("Succesful!\n\n\n")
+                    print("Successful!\n\n\n")
                     main()
                 elif input12 == "pink":
                     os.system("cd "+v_dir+"/color/ ; rm * ; touch 6.txt")
-                    print("Succesful!\n\n\n")
+                    print("Successful!\n\n\n")
                     main()
                 elif input12 == "turquoise":
                     os.system("cd "+v_dir+"/color/ ; rm * ; touch 7.txt")
-                    print("Succesful!\n\n\n")
+                    print("Successful!\n\n\n")
                     main()
                 elif input12 == "white":
                     os.system("cd "+v_dir+"/color/ ; rm * ; touch 8.txt")
-                    print("Succesful!\n\n\n")
+                    print("Successful!\n\n\n")
                     main()
         elif os.path.isfile(v_dir+"/lang/tr.txt"):
             input11=input("Lütfen bir seçenek seçin. Seçenekler:\n1 -> Dili İngilizce (English) Yap\n2 -> Renk Tercihini Değiştir\nCevap: ")
