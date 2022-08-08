@@ -69,7 +69,7 @@ python3_pip3_dependencies="psutil" # Options: "dependencies" and any
 
 
 # Below is the version of apiutaller.
-apiutaller="v1.4"
+apiutaller="v1.4.1"
 
 
 
@@ -94,7 +94,7 @@ def main_install():
                 exit("Başarılı! Siz artık "+appname+" programına sahipsiniz. Bizi seçtiğiniz için teşekkürler!")        
     else:
         if lang == "en":
-            exit("Error! This step is first. Closing apiutaller...")
+            exit("Error! This step is first. apiutaller is shutting down...")
         if lang == "tr":
             exit("Hata! Bu adım birinci. apitaller kapatılıyor...")        
 
@@ -112,7 +112,7 @@ def main_install():
                     exit("Başarılı! Siz artık "+appname+" programına sahipsiniz. Bizi seçtiğiniz için teşekkürler!")        
         else:
             if lang == "en":
-                exit("Error! This step is second. Closing apiutaller...")
+                exit("Error! This step is second. apiutaller is shutting down...")
             if lang == "tr":
                 exit("Hata! Bu adım ikinci. apitaller kapatılıyor...")
     if appdesktopfile != any:
@@ -129,7 +129,7 @@ def main_install():
                     exit("Başarılı! Siz artık "+appname+" programına sahipsiniz. Bizi seçtiğiniz için teşekkürler!")        
         else:
             if lang == "en":
-                exit("Error! This step is third. Closing apiutaller...")
+                exit("Error! This step is third. apiutaller is shutting down...")
             if lang == "tr":
                 exit("Hata! Bu adım üçüncü. apitaller kapatılıyor...")
     
@@ -157,7 +157,7 @@ def main_install():
                 exit("Başarılı! Siz artık "+appname+" programına sahipsiniz. Bizi seçtiğiniz için teşekkürler!")        
         else:
             if lang == "en":
-                exit("Error! This step is last. Closing apiutaller...")
+                exit("Error! This step is last. apiutaller is shutting down...")
             if lang == "tr":
                 exit("Hata! Bu adım sonuncu. apitaller kapatılıyor...")            
 
@@ -170,7 +170,7 @@ def control_and_install():
             main_install()
         elif debian_apt_support == "false":
             if lang == "en":
-                exit("I'm sorry, you can't use "+appname+"! Because your distro not supported from "+appname+".\nClosing apiutaller...")
+                exit("I'm sorry, you can't use "+appname+"! Because your distro not supported from "+appname+".\napiutaller is shutting down...")
             if lang == "tr":
                 exit("Üzgünüm, siz "+appname+" uygulamasını kullanamazsınız! Çünkü sizin dağıtımın "+appname+" tarafından desteklenmiyor.\napiutaller kapatılıyor...")            
 
@@ -183,7 +183,7 @@ def control_and_install():
             main_install()
         elif fedora_dnf_support == "false":
             if lang == "en":
-                exit("I'm sorry, you can't use "+appname+"! Because your distro not supported from "+appname+".\nClosing apiutaller...")
+                exit("I'm sorry, you can't use "+appname+"! Because your distro not supported from "+appname+".\napiutaller is shutting down...")
             if lang == "tr":
                 exit("Üzgünüm, siz "+appname+" uygulamasını kullanamazsınız! Çünkü sizin dağıtımın "+appname+" tarafından desteklenmiyor.\napiutaller kapatılıyor...")            
 
@@ -195,7 +195,7 @@ def control_and_install():
             main_install()
         elif arch_pacman_support == "false":
             if lang == "en":
-                exit("I'm sorry, you can't use "+appname+"! Because your distro not supported from "+appname+".\nClosing apiutaller...")
+                exit("I'm sorry, you can't use "+appname+"! Because your distro not supported from "+appname+".\napiutaller is shutting down...")
             if lang == "tr":
                 exit("Üzgünüm, siz "+appname+" uygulamasını kullanamazsınız! Çünkü sizin dağıtımın "+appname+" tarafından desteklenmiyor.\napiutaller kapatılıyor...")            
 
@@ -207,7 +207,7 @@ def control_and_install():
             main_install()
         elif opensuse_yum_support == "false":
             if lang == "en":
-                exit("I'm sorry, you can't use "+appname+"! Because your distro not supported from "+appname+".\nClosing apiutaller...")
+                exit("I'm sorry, you can't use "+appname+"! Because your distro not supported from "+appname+".\napiutaller is shutting down...")
             if lang == "tr":
                 exit("Üzgünüm, siz "+appname+" uygulamasını kullanamazsınız! Çünkü sizin dağıtımın "+appname+" tarafından desteklenmiyor.\napiutaller kapatılıyor...")            
 
@@ -219,7 +219,7 @@ def control_and_install():
             main_install()
         elif solus_eopkg_support == "false":
             if lang == "en":
-                exit("I'm sorry, you can't use "+appname+"! Because your distro not supported from "+appname+".\nClosing apiutaller...")
+                exit("I'm sorry, you can't use "+appname+"! Because your distro not supported from "+appname+".\napiutaller is shutting down...")
             if lang == "tr":
                 exit("Üzgünüm, siz "+appname+" uygulamasını kullanamazsınız! Çünkü sizin dağıtımın "+appname+" tarafından desteklenmiyor.\napiutaller kapatılıyor...")            
 
@@ -231,7 +231,7 @@ def control_and_install():
             main_install()
         elif pisi_pisi_support == "false":
             if lang == "en":
-                exit("I'm sorry, you can't use "+appname+"! Because your distro not supported from "+appname+".\nClosing apiutaller...")
+                exit("I'm sorry, you can't use "+appname+"! Because your distro not supported from "+appname+".\napiutaller is shutting down...")
             if lang == "tr":
                 exit("Üzgünüm, siz "+appname+" uygulamasını kullanamazsınız! Çünkü sizin dağıtımın "+appname+" tarafından desteklenmiyor.\napiutaller kapatılıyor...")            
 
@@ -243,7 +243,7 @@ def control_and_install():
             main_install()
         elif void_xbps_support == "false":
             if lang == "en":
-                exit("I'm sorry, you can't use "+appname+"! Because your distro not supported from "+appname+".\nClosing apiutaller...")
+                exit("I'm sorry, you can't use "+appname+"! Because your distro not supported from "+appname+".\napiutaller is shutting down...")
             if lang == "tr":
                 exit("Üzgünüm, siz "+appname+" uygulamasını kullanamazsınız! Çünkü sizin dağıtımın "+appname+" tarafından desteklenmiyor.\napiutaller kapatılıyor...")            
 
@@ -252,23 +252,22 @@ def control_and_install():
             main_install()
         else:
             if lang == "en":
-                exit("I'm sorry, you can't use "+appname+"! Because your distro not supported from "+appname+".\nClosing apiutaller...")
+                exit("I'm sorry, you can't use "+appname+"! Because your distro not supported from "+appname+".\napiutaller is shutting down...")
             if lang == "tr":
                 exit("Üzgünüm, siz "+appname+" uygulamasını kullanamazsınız! Çünkü sizin dağıtımın "+appname+" tarafından desteklenmiyor.\napiutaller kapatılıyor...")
     else:
         if lang == "en":
-            exit("I'm sorry, you can't use "+appname+"! Because your OS not supported from "+appname+".\nClosing apiutaller...")
+            exit("I'm sorry, you can't use "+appname+"! Because your OS not supported from "+appname+".\napiutaller is shutting down...")
         if lang == "tr":
             exit("Üzgünüm, siz "+appname+" uygulamasını kullanamazsınız! Çünkü sizin İS'niz "+appname+" tarafından desteklenmiyor.\napiutaller kapatılıyor...")
     
 
 
 def main_uninstall():
-
     os.system("cd "+appfolder+" ; rm "+appfilenew)
     if os.path.isfile(appfolder+appfilenew):
         if lang == "en":
-            exit("Error! This step is first. Closing apiutaller...")
+            exit("Error! This step is first. apiutaller is shutting down...")
         if lang == "tr":
             exit("Hata! Bu adım birinci. apiutaller kapatılıyor...")
     else:
@@ -282,7 +281,7 @@ def main_uninstall():
         os.system("cd /usr/share/polkit-1/actions ; rm "+policyfile)
         if os.path.isfile("/usr/share/polkit-1/actions/"+policyfile):
             if lang == "en":
-                exit("Error! This step is second. Closing apiutaller...")
+                exit("Error! This step is second. apiutaller is shutting down...")
             if lang == "tr":
                 exit("Hata! Bu adım ikinci. apiutaller kapatılıyor...")
         else:
@@ -296,7 +295,7 @@ def main_uninstall():
         os.system("cd /usr/share/applications ; rm "+appdesktopfile)
         if os.path.isfile("/usr/share/applications/"+appdesktopfile):
             if lang == "en":
-                exit("Error! This step is third. Closing apiutaller...")
+                exit("Error! This step is third. apiutaller is shutting down...")
             if lang == "tr":
                 exit("Hata! Bu adım üçüncü. apiutaller kapatılıyor...")
         else:
@@ -310,7 +309,7 @@ def main_uninstall():
         os.system("cd "+mainappfolder+" ; rm -rf "+mainappfoldername)
         if os.path.isdir(mainappfolder+mainappfoldername):
             if lang == "en":
-                exit("Error! This step is last. Closing apiutaller...")
+                exit("Error! This step is last. apiutaller is shutting down...")
             if lang == "tr":
                 exit("Hata! Bu adım sonuncu. apiutaller kapatılıyor...")
         else:
@@ -334,7 +333,7 @@ def info():
         main_uninstall()
     if ioa == "exit" or ioa == "çıkış":
         if lang == "en":
-            exit("Closing apiutaller...")
+            exit("apiutaller is shutting down...")
         if lang == "tr":
             exit("apiutaller kapatılıyor...")
 
@@ -353,7 +352,7 @@ def operation():
         info()
     if oa == "exit" or oa == "çıkış":
         if lang == "en":
-            exit("Closing apiutaller...")
+            exit("apiutaller is shutting down...")
         if lang == "tr":
             exit("apiutaller kapatılıyor...")
 
@@ -365,7 +364,7 @@ def license():
         if license == "y":
             operation()
         if license == "n":
-            exit("I'm sorry, you can't use "+appname+" and apiutaller, because you don't agree licenses!\nClosing apiutaller...")
+            exit("I'm sorry, you can't use "+appname+" and apiutaller, because you don't agree licenses!\napiutaller is shutting down...")
     if lang == "tr":    
         license=input("Merhabalar! Ben "+appname+" uygulamasını kurmayı ya da silmeyi deneyeceğim.\nBen GPLv3 ile lisanslıyım!\n"+appname+" ise "+licensename+" ile lisanslı!\nBunları kabul ediyor musunuz?\nSeçenekler: e ya da h\nCevap: ")
         if license == "e":
@@ -378,7 +377,7 @@ def license():
 lang="" # Don't change this variable!
 print("Copyright (C) 2022 MuKonqi (Muhammed Abdurrahman)")
 if not os.getuid() == 0:
-    exit("\nOnly root can run apiutaller!\nSadece kök apiutaller'i çalıştırabilir.\nClosing... / Kapatılıyor...")
+    exit("\nOnly root can run apiutaller!\nSadece kök apiutaller'i çalıştırabilir.\nShutting down... / Kapatılıyor...")
 language=input("Choose English or Turkish as a language.\nLütfen İngilizce veya Türkçeyi bir dil olarak seçiniz.\nOptions / Seçenekler: en / tr\nLanguage / Dil: ")
 if language == 'en':
     lang="en"
