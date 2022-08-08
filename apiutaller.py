@@ -64,7 +64,7 @@ pisi_pisi_support="true" # Options: true and false
 pisi_pisi_dependencies="python3" # Options: "dependencies" and any
 other_gnulinux_support="true" # Options: true and false
 python_pip_dependencies=any # Options: "dependencies" and any
-python3_pip3_dependencies="psutil" # Options: "dependencies" and any
+python3_pip3_dependencies="psutil distro" # Options: "dependencies" and any
 
 
 
