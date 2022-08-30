@@ -16,7 +16,7 @@ If you are using su type ```cd yasfetch ; su python3 apiutaller.py```.
 
 That's all!
 #### Türkçe
-Öncelikle, Git'i yükleyin. Git çoğu dağıtımın deposunda şu adla yer alır: git
+Öncelikle, Git'i yükleyin. Git çoğu dağıtımınızdeposunda şu adla yer alır: git
 
 Sonra, terminalde yazın: ```git clone https://github.com/MuKonqi/yasfetch```
 

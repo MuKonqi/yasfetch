@@ -3,11 +3,11 @@
 
 # LICENSE !!!!!
 ## Copyright (C) 2022 MuKonqi (Muhammed Abdurrahman)
-## yasfetch is free software: you can redistribute it and/or modify
+## Yasfetch is free software: you can redistribute it and/or modify
 ## it under the terms of the GNU General Public License as published by
 ## the Free Software Foundation, either version 3 of the License, in args or
 ## (at your option) any later version.
-## yasfetch is distributed in the hope that it will be useful,
+## Yasfetch is distributed in the hope that it will be useful,
 ## but WITHOUT ANY WARRANTY; without even the implied warranty of
 ## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 ## GNU General Public License for more details.
@@ -84,7 +84,7 @@ def main():
         v_pkg_manager="XBPS"
 
     if os.path.isfile(v_dir+"/lang/en.txt"):
-        print(f"     Welcome to yasfetch {color}"+v_username+f"{sifir}!")
+        print(f"     Welcome to Yasfetch {color}"+v_username+f"{sifir}!")
         print(f"{color}Hostname:           {sifir}"+v_hostname)
         print(f"{color}Distribution:       {sifir}"+v_distro)
         print(f"{color}Kernel:             {sifir}"+v_platform)
@@ -106,7 +106,7 @@ def main():
     exit()
 if v_system == "Linux":
     if not os.path.isdir(v_dir) or not os.path.isdir(v_dir+"/color") or not os.path.isdir(v_dir+"/lang"):
-        os.system("cd /home/"+v_username+"/.config/ ; mkdir yasfetch ; cd yasfetch ; mkdir color ; mkdir lang")
+        os.system("cd /home/"+v_username+"/.config/ ; mkdir Yasfetch ; cd Yasfetch ; mkdir color ; mkdir lang")
         input1=input("Can't found language and color setting. First, select a language.\nDil ve renk ayarı bulunamadı. İlk önce bir dil seçin.\n\nOptions / Seçenekler: en / tr\nAnswer / Cevap: ")
         
         if input1 == "en":
