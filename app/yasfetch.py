@@ -94,7 +94,7 @@ def main():
         print(f"{color}RAM usage:          {sifir}%"+v_ram)
         print(f"{color}Uptime:             {sifir}"+v_uptime)
     elif os.path.isfile(v_dir+"/lang/tr.txt"):
-        print(f"     yasfetch'e hoşgeldiniz {color}"+v_username+f"{sifir}!")
+        print(f"     Yasfetch'e hoşgeldiniz {color}"+v_username+f"{sifir}!")
         print(f"{color}Ana bilgisayar adı: {sifir}"+v_hostname)
         print(f"{color}Dağıtım:            {sifir}"+v_distro) 
         print(f"{color}Çekirdek:           {sifir}"+v_platform)
@@ -106,7 +106,7 @@ def main():
     exit()
 if v_system == "Linux":
     if not os.path.isdir(v_dir) or not os.path.isdir(v_dir+"/color") or not os.path.isdir(v_dir+"/lang"):
-        os.system("cd /home/"+v_username+"/.config/ ; mkdir Yasfetch ; cd Yasfetch ; mkdir color ; mkdir lang")
+        os.system("cd /home/"+v_username+"/.config/ ; mkdir yasfetch ; cd yasfetch ; mkdir color ; mkdir lang")
         input1=input("Can't found language and color setting. First, select a language.\nDil ve renk ayarı bulunamadı. İlk önce bir dil seçin.\n\nOptions / Seçenekler: en / tr\nAnswer / Cevap: ")
         
         if input1 == "en":

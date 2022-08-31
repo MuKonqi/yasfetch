@@ -77,7 +77,7 @@ python3_pip3_dependencies="psutil distro" # Options: "dependencies" and any
 
 
 # Below is the version of Apiutaller.
-Apiutaller="v1.5"
+Apiutaller="v1.5.1"
 
 
 if not os.getuid() == 0:
@@ -408,11 +408,11 @@ if "--uninstall" in args or "--sil" in args:
 
 print("Copyright (C) 2022 MuKonqi (Muhammed Abdurrahman)")
 language=input("Choose English or Turkish as a language.\nLütfen İngilizce veya Türkçeyi bir dil olarak seçiniz.\nOptions / Seçenekler: en / tr\nLanguage / Dil: ")
-if lang == "default" or language == 'en':
+if lang == "default" and language == 'en':
     lang="en"
     print("English selected.")
     license()
-if lang == "default" or language == 'tr':
+if lang == "default" and language == 'tr':
     lang="tr"
     print("Türkçe seçildi.")
     license()
