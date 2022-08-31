@@ -4,7 +4,7 @@
 All GNU/Linux distros. / Tüm GNU/Linux dağıtımları.
 ## Installation / Kurulum
 ### English
-#### BetterSS uses [Apiutaller](https://github.com/MuKonqi/apiutaller) as installer and uninstaller.
+#### Yasfetch uses [Apiutaller](https://github.com/MuKonqi/apiutaller) as installer and uninstaller.
 First, install Git. Git is available in the repository of most distributions under the name: git
 
 Then, type in terminal: ```git clone https://github.com/MuKonqi/yasfetch```
@@ -17,7 +17,7 @@ If you are using su type ```cd yasfetch ; su python3 apiutaller.py```.
 
 That's all!
 ### Türkçe
-#### BetterSS, yükleyici ve kaldırıcı olarak [Apiutaller](https://github.com/MuKonqi/apiutaller)'i kullanmaktadır.
+#### Yasfetch, yükleyici ve kaldırıcı olarak [Apiutaller](https://github.com/MuKonqi/apiutaller)'i kullanmaktadır.
 Öncelikle, Git'i yükleyin. Git çoğu dağıtımın deposunda şu adla yer alır: git
 
 Sonra, terminalde yazın: ```git clone https://github.com/MuKonqi/yasfetch```
