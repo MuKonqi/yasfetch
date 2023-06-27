@@ -3,7 +3,7 @@
 
 
 # LICENSE !!!!!
-## Copyright (C) 2022 MuKonqi (Muhammed Abdurrahman)
+## Copyright (C) 2022, 2023 MuKonqi (Muhammed Abdurrahman)
 ## Apiutaller is free software: you can redistribute it and/or modify
 ## it under the terms of the GNU General Public License as published by
 ## the Free Software Foundation, either version 3 of the License, or
@@ -77,7 +77,7 @@ python3_pip3_dependencies="psutil distro" # Options: "dependencies" and any
 
 
 # Below is the version of Apiutaller.
-Apiutaller="v1.5.1"
+Apiutaller="v1.6"
 
 
 if not os.getuid() == 0:
@@ -85,8 +85,56 @@ if not os.getuid() == 0:
 
 def main_install():
     if python_pip_dependencies != any:
+        if not os.path.isfile("/usr/bin/pip") or not os.path.isfile("/bin/pip"):
+            if lang == "default" or lang == "en":
+                print("Pip is not found. If Apiutaller supports pip installation on the distribution you are using, the installation will start.")
+            if lang == "default" or lang == "tr":
+                print("Pip bulunamadı. Apiutaller kullandığınız dağıtımda pip kurulumunu destekliyorsa kurulum başlayacaktır.")  
+            if os.path.isfile("/etc/debian_version"):
+                os.system("apt install -y python-pip")
+            elif os.path.isfile("/etc/fedora-release"):
+                os.system("dnf install -y python-pip")
+            elif os.path.isfile("/bin/pacman") or os.path.isfile("/usr/bin/pacman"):
+                os.system("pacman -S -y python2-pip --noconfirm")
+            elif os.path.isfile("/usr/bin/yum") and not os.path.isfile("/etc/fedora-release"):
+                os.system("yum install -y epel-release python-pip")
+            elif os.path.isfile("/usr/bin/zypper"):
+                os.system("zypper install --non-interactive python-pip")
+            elif os.path.isfile("/etc/solus-release"):
+                os.system("eopkg install -y pip")
+            elif os.path.isdir("/etc/xbps.d"):
+                os.system("xbps-install -y python-pip")
+            else:
+                if lang == "default" or lang == "en":
+                    exit("Apiutaller can not install pip on the distribution you are using. Apiutaller is shutting down...")
+                if lang == "default" or lang == "tr":
+                    exit("Apiutaller kullandığınız dağıtıma pip yükleyemez. Apiutaller kapatılıyor...")        
         os.system("pip install "+python_pip_dependencies)
     elif python3_pip3_dependencies != any:
+        if not os.path.isfile("/usr/bin/pip3") or not os.path.isfile("/bin/pip3"):
+            if lang == "default" or lang == "en":
+                print("Pip3 is not found. If Apiutaller supports pip3 installation on the distribution you are using, the installation will start.")
+            if lang == "default" or lang == "tr":
+                print("Pip3 bulunamadı. Apiutaller kullandığınız dağıtımda pip3 kurulumunu destekliyorsa kurulum başlayacaktır.")  
+            if os.path.isfile("/etc/debian_version"):
+                os.system("apt install -y python3-pip")
+            elif os.path.isfile("/etc/fedora-release"):
+                os.system("dnf install -y python3-pip")
+            elif os.path.isfile("/bin/pacman") or os.path.isfile("/usr/bin/pacman"):
+                os.system("pacman -S -y python-pip --noconfirm")
+            elif os.path.isfile("/usr/bin/yum") and not os.path.isfile("/etc/fedora-release"):
+                os.system("yum install -y epel-release python-pip")
+            elif os.path.isfile("/usr/bin/zypper"):
+                os.system("zypper install --non-interactive python3-pip")
+            elif os.path.isfile("/etc/solus-release"):
+                os.system("eopkg install -y pip")
+            elif os.path.isdir("/etc/xbps.d"):
+                os.system("xbps-install -y python3-pip")
+            else:
+                if lang == "default" or lang == "en":
+                    exit("Apiutaller can not install pip3 on the distribution you are using. Apiutaller is shutting down...")
+                if lang == "default" or lang == "tr":
+                    exit("Apiutaller kullandığınız dağıtıma pip3 yükleyemez. Apiutaller kapatılıyor...")                    
         os.system("pip3 install "+python3_pip3_dependencies)
 
     os.system("chmod +x *")
@@ -209,7 +257,7 @@ def control_and_install():
             if lang == "default" or lang == "tr":
                 exit("Üzgünüm, siz "+appname+" uygulamasını kullanamazsınız! Çünkü sizin dağıtımınız "+appname+" tarafından desteklenmiyor.\nApiutaller kapatılıyor...")            
 
-    elif os.path.isfile("/usr/bin/yum"):
+    elif os.path.isfile("/usr/bin/yum") and not os.path.isfile("/etc/fedora-release"):
         if rhel_yum_dependencies != any and rhel_yum_support == "true":
             os.system("yum install -y "+rhel_yum_dependencies)
             main_install()
@@ -395,18 +443,18 @@ def license():
             exit("Üzgünüm, siz "+appname+" ile Apiutaller'i kullanamazsınız, çünkü siz lisansları kabul etmediniz!\napuitaller kapatılıyor...")
 
 if "--install" in args or "--kur" in args:
-    print("Copyright (C) 2022 MuKonqi (Muhammed Abdurrahman)")
+    print("Copyright (C) 2022, 2023 MuKonqi (Muhammed Abdurrahman)")
     print("If you do not press Ctrl+C within 12 seconds, the installation will start and you will be deemed to have accepted both the GPLv3 license used by Apiutaller and the "+licensename+" license used by the "+appname+" program.")
     time.sleep(12)
     control_and_install()
 if "--uninstall" in args or "--sil" in args:
-    print("Copyright (C) 2022 MuKonqi (Muhammed Abdurrahman)")
+    print("Copyright (C) 2022, 2023 MuKonqi (Muhammed Abdurrahman)")
     print("If you do not press Ctrl+C within 12 seconds, the uninstallation will start and you will be deemed to have accepted both the GPLv3 license used by Apiutaller and the "+licensename+" license used by the "+appname+" program.")
     time.sleep(12)
     main_uninstall()
 
 
-print("Copyright (C) 2022 MuKonqi (Muhammed Abdurrahman)")
+print("Copyright (C) 2022, 2023 MuKonqi (Muhammed Abdurrahman)")
 language=input("Choose English or Turkish as a language.\nLütfen İngilizce veya Türkçeyi bir dil olarak seçiniz.\nOptions / Seçenekler: en / tr\nLanguage / Dil: ")
 if lang == "default" and language == 'en':
     lang="en"
