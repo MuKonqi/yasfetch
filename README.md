@@ -1,35 +1,26 @@
 # yasfetch
 ## Yet Another Simple Fetch
-## Supported platforms / Desteklenen platformlar:
-All GNU/Linux distros. / Tüm GNU/Linux dağıtımları.
-## Installation / Kurulum
-### English
-#### Yasfetch uses [Apiutaller](https://github.com/MuKonqi/apiutaller) as installer and uninstaller.
-First, install Git. Git is available in the repository of most distributions under the name: git
+Get system informations and usages with a basic UI
 
-Then, type in terminal: ```git clone https://github.com/MuKonqi/yasfetch```
+## Supported platforms
+Note: Getting number of packages only works on Debian GNU/Linux, Fedora Linux, Arch Linux, openSUSE Tumbleweed and distributions which based on them
 
-Now if you are using sudo: ```cd yasfetch ; sudo python3 apiutaller.py```;
+- All GNU/Linux distributions
 
-if you are using doas ```cd yasfetch ; doas python3 apiutaller.py```;
+## Dependencies
+### Normal packages
+- Python3 (mostly python3 / openSUSE Tumbleweed: python312)
+- curl (mostly curl)
 
-If you are using su type ```cd yasfetch ; su python3 apiutaller.py```.
+### Python packages
+- os, sys, getpass, threading, subprocess, datetime, socket, platform (mostly built-in)
+- PyQt6 (mostly pip is used: PyQt6 / openSUSE Tumbleweed: python312-PyQt6)
+- distro (mostly pip is used: distro / openSUSE Tumbleweed: python312-distro)
+- psuitl (mostly pip is used: psutil / openSUSE Tumbleweed: python312-psutil)
 
-That's all!
-### Türkçe
-#### Yasfetch, yükleyici ve kaldırıcı olarak [Apiutaller](https://github.com/MuKonqi/apiutaller)'i kullanmaktadır.
-Öncelikle, Git'i yükleyin. Git çoğu dağıtımın deposunda şu adla yer alır: git
+## Running
+- Warning: First install dependencies.
+```curl -ssL https://raw.githubusercontent.com/MuKonqi/yasfetch/main/yasfetch.py | python3```
 
-Sonra, terminalde yazın: ```git clone https://github.com/MuKonqi/yasfetch```
-
-Şimdi sudo kullanıyorsanız ```cd yasfetch ; sudo python3 apiutaller.py```;
-
-Eğer doas kullanıyorsunuz ```cd yasfetch ; doas python3 apiutaller.py```;
-
-Eğer su kullanıyorsanız ```cd yasfetch ; su python3 apiutaller.py``` yazınız.
-
-Hepsi bu kadar!
-### License / Lisans
-GPLv3
-### Credit / Kredi
-[python-color](https://github.com/Afacanc38/python-color)
+### License
+GPLv3 or later
