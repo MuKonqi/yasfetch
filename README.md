@@ -3,8 +3,7 @@
 Get system informations and usages with a basic UI
 
 ## Supported platforms
-Note: Getting number of packages only works on Debian GNU/Linux, Fedora Linux, Arch Linux, openSUSE Tumbleweed and distributions which based on them
-
+- **Note: Getting number of packages only works on Debian GNU/Linux, Fedora Linux, Arch Linux, openSUSE Tumbleweed and distributions which based on them**
 - All GNU/Linux distributions
 
 ## Dependencies
@@ -19,8 +18,8 @@ Note: Getting number of packages only works on Debian GNU/Linux, Fedora Linux, A
 - psuitl (mostly pip is used: psutil / openSUSE Tumbleweed: python312-psutil)
 
 ## Running
-- Warning: First install dependencies.
-```curl -ssL https://raw.githubusercontent.com/MuKonqi/yasfetch/main/yasfetch.py | python3```
+- **Warning: First install dependencies.**
+- ```curl -ssL https://raw.githubusercontent.com/MuKonqi/yasfetch/main/yasfetch.py | python3```
 
 ### License
-GPLv3 or later
+- GPLv3 or later
